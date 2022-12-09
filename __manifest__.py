@@ -1,34 +1,28 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sussy_baka",
+    'name': "Sussy Baka - Online Course Manager",
 
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'summary': 'This module manages a online course',
 
     'description': """
-        Long description of module's purpose
+        This module manages a online course, with the following data:
+        - Courses
+        - Subjects that a teacher is specialized
+        - Relation between student and courses
+        - Relation between teacher and courses
+        - Posts and comments in them
+        
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/10.0/odoo/addons/base/module/module_data.xml
-    # for the full list
+    'author': "Sussy Baka S.A.",
     'category': 'Uncategorized',
     'version': '0.1',
-
-    # any module necessary for this one to work correctly
     'depends': ['base'],
-
-    # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
-    # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
