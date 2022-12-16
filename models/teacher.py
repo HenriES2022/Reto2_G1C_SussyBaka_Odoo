@@ -7,9 +7,7 @@ class teacher(models.Model):
     _name='sussy_baka.teacher'
     #The name of the teacher
     #name, because of the hierarchy, dont know how to put
-
-    name= fields.Char(string="Name:", required=True, 
-        help="The name of the teacher")
+    
     
     #The subjects where the teacher is specialized
     specializedSubjects = fields.Many2many('sussy_baka.subject', string="Subject:")
