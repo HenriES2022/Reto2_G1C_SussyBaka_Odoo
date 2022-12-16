@@ -14,8 +14,8 @@ class subject(models.Model):
     level = fields.Char(string="Level:", required=True, 
         help="The level of the subject")
     #The courses where the subject is going to be teached
-    courseWithSubject = fields.One2many('sussy_baka.course', string="Course:",
-        help="The course where the subject is going to be teached", ondeldete='set null')
+    course_ids = fields.One2many('sussy_baka.course', string="Courses:",
+        help="The courses where the subject is going to be teached", ondeldete='set null')
     
     #The teachers that are specialized in this subject
-    teachersSpecializedInSubject = fields.Many2many('sussy_baka.teacher', string="teacher")
+    teachers_ids = fields.Many2many('sussy_baka.teacher', string="teachers")
