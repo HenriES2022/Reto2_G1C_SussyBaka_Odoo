@@ -23,7 +23,7 @@
         'views/views.xml',
         'views/templates.xml',
     ],
-    'demo': [
-        'demo/demo.xml',
+    'course': [
+        'course/course.xml',
     ],
 }
