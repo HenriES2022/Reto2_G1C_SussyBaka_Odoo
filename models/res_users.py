@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class res_users(models.Model):
+class ResUsers(models.Model):
     _inherit = 'res.users'
     
     #A boolean field to know if the user is a teacher
@@ -23,3 +23,4 @@ class res_users(models.Model):
     
     #A Many2many field with course. studying courses relation between a student and a course
     studying_courses = fields.Many2many('sussy_baka.course', string="Studying courses:", help="The courses that the student is studying")
+    

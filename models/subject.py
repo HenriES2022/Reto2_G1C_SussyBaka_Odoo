@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 #The subject class for the 
-class subject(models.Model):
+class Subject(models.Model):
     #The name of the model
     _name ='sussy_baka.subject'
     #The name of the subject
@@ -19,3 +19,4 @@ class subject(models.Model):
     
     #The teachers that are specialized in this subject
     teachers_ids = fields.Many2many('sussy_baka.teacher', string="teachers")
+    

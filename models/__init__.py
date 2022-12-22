@@ -4,3 +4,4 @@ from . import post
 from . import models
 from . import res_users
 from . import subject
+from . import course
