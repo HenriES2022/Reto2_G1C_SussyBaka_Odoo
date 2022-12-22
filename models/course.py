@@ -8,7 +8,7 @@ class Course(models.Model):
 #   Fields
 
     name = fields.Char(required=True)
-    description = field.Text()
+    description = fields.Text()
     start_date = fields.Date()
     private = fields.Boolean()
     visible = fields.Boolean()
