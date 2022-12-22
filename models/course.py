@@ -15,8 +15,8 @@ class Course(models.Model):
     
 #   Fields Relations
     
-    teacher_id = fields.Many2one('sussy_baka.teacher', string="teacher_id")
-    subject_id = fields.Many2one('sussy_baka.subject', string="subject_id")
+    teacher_id = fields.Many2one('sussy_baka.teacher', string="Teacher")
+    subject_id = fields.Many2one('sussy_baka.subject', string="Subject")
     post_id = fields.One2many('sussy_baka.post', string="post_ids")
     student_id = fields.Many2many('sussy_baka.student', string="student_ids")
 
