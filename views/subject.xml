@@ -1,0 +1,22 @@
+<odoo>
+    
+    <data>
+        <!-- actions opening views on models -->
+    
+        <record model="ir.actions.act_window" id="sussy_baka.subject_action_window">
+            <field name="name">Subject</field>
+            <field name="res_model">sussy_baka.subject</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        
+        <!-- actions -->
+    
+        <menuitem name="Gestion de asignaturas" 
+                  id="sussy_baka.subject_menu" 
+                  parent="sussy_baka.menu_1"
+                  action="sussy_baka.subject_action_window"/>
+        
+    </data>
+    
+</odoo>
