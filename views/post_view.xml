@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.actions.act_window" id="sussy_baka.post_action_window">
+            <field name="name">Sussy Baka - Course Posts</field>
+            <field name="res_model">sussy_baka.post</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+        <menuitem name="Posts" id="sussy_baka.post_menu" parent="sussy_baka.menu_1"
+                  action="sussy_baka.post_action_window"/>
+    
+    </data>
+</odoo>
