@@ -18,5 +18,5 @@ class Subject(models.Model):
         help="The courses where the subject is going to be teached", ondeldete='set null')
     
     #The teachers that are specialized in this subject
-    teachers_ids = fields.Many2many('sussy_baka.teacher', string="teachers")
+    teachers_ids = fields.Many2many('res.users', string="teachers")
     
