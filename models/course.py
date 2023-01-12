@@ -18,7 +18,7 @@ class Course(models.Model):
     teacher_id = fields.Many2one('res.users', string="Teacher")
     subject_id = fields.Many2one('sussy_baka.subject', string="Subject")
     post_id = fields.One2many('sussy_baka.post', 'course_id', string="Posts")
-    student_id = fields.Many2many('res.users', string="student_ids")
+    student_id = fields.Many2many('res.users', string="Students")
 
 #     @api.depends('value')
 #     def _value_pc(self):
