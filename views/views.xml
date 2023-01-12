@@ -44,9 +44,9 @@
     <menuitem name="sussy_baka" id="sussy_baka.menu_root"/>
     -->
     <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="sussy_baka.menu_1" parent="sussy_baka.menu_root"/>
-    <menuitem name="Menu 2" id="sussy_baka.menu_2" parent="sussy_baka.menu_root"/>
+    
+    <menuitem name="Sussy Baka" id="sussy_baka_menu" parent="main_sussy_baka_menu"/>
+   <!-- <menuitem name="Menu 2" id="sussy_baka.menu_2" parent="sussy_baka.menu_root"/>
     -->
     <!-- actions -->
     <!--
