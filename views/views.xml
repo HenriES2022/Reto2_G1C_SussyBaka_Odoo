@@ -40,9 +40,9 @@
     -->
 
     <!-- Top menu item -->
-    <!--
-    <menuitem name="sussy_baka" id="sussy_baka.menu_root"/>
-    -->
+
+    <menuitem id="main_sussy_baka_menu" name="Sussy Baka"/>
+
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="sussy_baka.menu_1" parent="sussy_baka.menu_root"/>
