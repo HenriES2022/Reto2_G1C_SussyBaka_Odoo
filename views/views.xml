@@ -1,12 +1,15 @@
 <odoo>
-    <data>
+  <data>
+    
+    <!-- Top menu item -->
 
-        <!-- Top menu item -->
-        <menuitem name="SussyBaka" id="sussy_baka.menu_root"/>
-        
-        <!-- Menu Categories -->
-        <menuitem name="Online Courses" id="sussy_baka.menu_1" parent="sussy_baka.menu_root"/>
+    <menuitem id="sussy_baka.menu_root" name="Sussy Baka"/>
 
-
-    </data>
+    <!-- menu categories -->
+    
+    <menuitem name="Online Courses"
+              id="sussy_baka.menu_1" 
+              parent="sussy_baka.menu_root"/>
+   
+  </data>
 </odoo>
