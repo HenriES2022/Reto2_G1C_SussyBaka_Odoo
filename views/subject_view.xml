@@ -4,7 +4,7 @@
         <!-- actions opening views on models -->
     
         <record model="ir.actions.act_window" id="sussy_baka.subject_action_window">
-            <field name="name">Subject</field>
+            <field name="name">Subjects</field>
             <field name="res_model">sussy_baka.subject</field>
             <field name="view_mode">tree,form</field>
         </record>
@@ -12,11 +12,76 @@
         
         <!-- actions -->
     
-        <menuitem name="Gestion de asignaturas" 
+        <menuitem name="Course subjects" 
                   id="sussy_baka.subject_menu" 
                   parent="sussy_baka.menu_1"
                   action="sussy_baka.subject_action_window"/>
         
+        
+        
+        <record model="ir.ui.view" id="sussy_baka.subject_tree_view">
+            <field name="name">subject tree view</field>
+            <field name="model">sussy_baka.subject</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Subject list">
+                    <field name="name"/>
+                    <field name="level"/>
+                    <field name="century"/>
+                    <field name="teachers_ids">
+                        <tree>
+                            <field name="name"/>
+                        </tree>
+                    </field>
+                    <field name="course_ids">
+                        <tree>
+                            <field name="name"/>
+                        </tree>
+                    </field>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sussy_baka.subject_form_view">
+            <field name="name">subject form view</field>
+            <field name="model">sussy_baka.subject</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Subject form">
+                    <sheet>
+                        <group colspan="4">
+                            <h1><field name="name"/></h1>
+                            <group colspan="2" col="2">
+                                <field name="century"/>
+                                <field name="level"/>
+                            </group>
+                          
+                        </group>
+                        
+                        <notebook colspan="4">
+                            <page string="Teachers">
+                                <field name="teachers_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="email"/>
+                                    </tree>
+                                </field>
+                                
+                            </page>
+                            <page string="Courses">
+                                <field name="course_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    
+                </form>
+            </field>
+        </record>
+       
     </data>
     
 </odoo>
