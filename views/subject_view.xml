@@ -28,17 +28,21 @@
                     <field name="name"/>
                     <field name="level"/>
                     <field name="century"/>
-                    <field name="teachers_ids">
-                        <tree>
-                            <field name="name"/>
-                        </tree>
-                    </field>
-                    <field name="course_ids">
-                        <tree>
-                            <field name="name"/>
-                        </tree>
-                    </field>
                 </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sussy_baka.subject_search_view">
+            <field name="name">subject search view</field>
+            <field name="model">sussy_baka.subject</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="level"/>
+                    <field name="century"/>
+                    <field name="teachers_ids"/>
+                    <field name="course_ids"/>
+                </search>
             </field>
         </record>
         
@@ -50,7 +54,9 @@
                 <form string="Subject form">
                     <sheet>
                         <group colspan="4">
-                            <h1><field name="name"/></h1>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
                             <group colspan="2" col="2">
                                 <field name="century"/>
                                 <field name="level"/>
@@ -72,6 +78,9 @@
                                 <field name="course_ids">
                                     <tree>
                                         <field name="name"/>
+                                        <field name="start_date"/>
+                                        <field name="visible"/>
+                                        <field name="private"/>
                                     </tree>
                                 </field>
                             </page>
