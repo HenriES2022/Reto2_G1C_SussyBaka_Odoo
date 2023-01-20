@@ -12,6 +12,7 @@ class Post(models.Model):
 
     # Fields
     content_text = fields.Text('Content')
+    title = fields.Text('Title')
     img = fields.Binary('Image', help="Insert an image here")
     #video = 
     
