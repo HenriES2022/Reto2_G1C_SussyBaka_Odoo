@@ -23,8 +23,9 @@
         'views/views.xml',
         'views/course_view.xml',
         'views/post_view.xml',
-        'views/subject_view.xml'
+        'views/subject_view.xml',
         'views/templates.xml',
+        'views/user_view.xml'
     ],
     'course': [
         'course/course.xml',

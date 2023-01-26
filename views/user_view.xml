@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="sussy_baka.users_extends_form_view">
+            <field name="name">users extends form view</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="isTeacher"/>
+                    <field name="isStudent"/>
+                </xpath>
+                
+                <xpath expr="//page[@name='access_rights']" position="after">
+                    <page string="Teaching courses">
+                        <field name="teaching_courses">
+                            <tree>
+                                <field name="name"/>
+                                <field name="start_date"/>
+                                <field name="private"/>
+                                <field name="visible"/>
+                            </tree>
+                            
+                        </field>
+                    </page>
+                    <page string="Studying courses">
+                        <field name="studying_courses">
+                            <tree>
+                                <field name="name"/>
+                                <field name="start_date"/>
+                                <field name="teacher_id"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Specialized subjects">
+                        <field name="subject_ids"/>
+                    </page>
+                    
+                    <page string="Comments">
+                        <field name="coments">
+                            <tree>
+                                <field name="post_id"/>
+                                <field name="comment_text"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                
+            </field>
+        </record>
+    </data>
+</odoo>
