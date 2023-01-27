@@ -16,6 +16,8 @@
                 <tree>
                     <field name="name"/>
                     <field name="start_date"/>
+                    <field name="teacher_id"/>
+                    <field name="subject_id"/>
                 </tree>
             </field>
         </record>
@@ -29,6 +31,9 @@
                         <group>
                             <field name="name"/>
                             <field name="description"/>
+                            <field name="start_date"/>
+                            <field name="teacher_id"/>
+                            <field name="subject_id"/>
                         </group>
                     </sheet>
                 </form>
@@ -42,6 +47,8 @@
                 <search>
                     <field name="name"/>
                     <field name="start_date"/>
+                    <field name="teacher_id"/>
+                    <field name="subject_id"/>
                 </search>
             </field>
         </record>

@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import api
+from odoo import fields
+from odoo import models
+from . import subject
 
 class Course(models.Model):
     _name = 'sussy_baka.course'
@@ -20,6 +23,12 @@ class Course(models.Model):
     post_id = fields.One2many('sussy_baka.post', 'course_id', string="Posts")
     student_id = fields.Many2many('res.users', string="Students")
 
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+    @api.onchange('start_date', 'create_date')
+    def _course_after_subject(self):
+        self.start_date < subject.create_date
+        return {
+            'warning': {
+                'title': "Something bad happened",
+                'message': "Course can't be older than Subject"
+            },
+        }
