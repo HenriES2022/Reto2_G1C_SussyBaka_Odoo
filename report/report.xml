@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <report 
+            id="report_post"
+            string="Informe de post"
+            model="sussy_baka.post"
+            report_type="qweb-pdf"
+            file="sussy_baka.post_report"
+            name="sussy_baka.post_report"
+        />
+    </data>
+</odoo>
