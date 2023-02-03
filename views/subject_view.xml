@@ -28,6 +28,8 @@
                     <field name="name"/>
                     <field name="level"/>
                     <field name="century"/>
+                    <field name="create_uid"/>
+                    <field name="create_date"/>
                 </tree>
             </field>
         </record>
@@ -42,6 +44,8 @@
                     <field name="century"/>
                     <field name="teachers_ids"/>
                     <field name="course_ids"/>
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
                 </search>
             </field>
         </record>
@@ -53,16 +57,23 @@
             <field name="arch" type="xml">
                 <form string="Subject form">
                     <sheet>
-                        <group colspan="4">
-                            <h1>
-                                <field name="name"/>
-                            </h1>
-                            <group colspan="2" col="2">
+                        
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        
+                        <group>
+                            <group>
                                 <field name="century"/>
                                 <field name="level"/>
+                                
                             </group>
-                          
+                            <group>
+                                <field name="create_uid"/>
+                                <field name="create_date"/>
+                            </group>
                         </group>
+                        
                         
                         <notebook colspan="4">
                             <page string="Teachers">
