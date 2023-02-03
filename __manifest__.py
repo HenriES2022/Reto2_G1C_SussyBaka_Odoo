@@ -17,18 +17,20 @@
     'author': "Sussy Baka S.A.",
     'category': 'Uncategorized',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['base','report'],
     'data': [
         'security/security_groups.xml',
         'security/ir.model.access.csv',
+        'report/report.xml',
+        'report/post_report.xml',
         'views/views.xml',
         'views/course_view.xml',
         'views/post_view.xml',
         'views/subject_view.xml',
         'views/templates.xml',
-        'views/user_view.xml'
+        'views/user_view.xml',
     ],
-    'course': [
-        'course/course.xml',
-    ],
+    'installable': True, 
+    'auto_install': False
+
 }
