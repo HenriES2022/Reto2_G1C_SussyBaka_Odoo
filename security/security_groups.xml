@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="students_group" model="res.groups">
+            <field name="name">SussyBaka / Students</field>
+        </record>
+        <record id="teachers_group" model="res.groups">
+            <field name="name">SussyBaka / Teachers</field>
+        </record>
+    </data>
+</odoo>
